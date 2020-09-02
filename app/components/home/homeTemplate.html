@@ -1,16 +1,5 @@
-<div>
-    Home
-    Army
-    Resources
-      AdE link
-
-    Calendar
-    Tournaments
-
-    blaah
+<div uib-carousel active = active interval="interval" no-wrap="noWrapSlides">
+  <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+    <img ng-src="{{slide.image}}" style="margin:auto;">
   </div>
-<div>
-  Content
-picture banner
-smaller picture 200x250
 </div>
