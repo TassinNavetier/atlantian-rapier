@@ -1,19 +1,26 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" charset="utf-8"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<script src="app/components/home/homeController.js"></script>
-<script src="app/app.route.js"></script>
-<script src="app/app.module.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="app/components/home/homeController.js"></script>
+  <script src="app/components/awards/awardsController.js"></script>
+  <script src="app/components/army/armyController.js"></script>
+  <script src="app/components/resources/resourcesController.js"></script>
+  <script src="app/components/nav/navController.js"></script>
+  <script src="app/app.route.js"></script>
+  <script src="app/app.module.js"></script>
+
+  <link rel="stylesheet" href="assets/css/RapierStyles.css">
 
   <head>
     <meta charset="utf-8">
     <title>Atlantian Rapier Net</title>
   </head>
   <body>
-<div ng-app="AtlantianRapier">
-<div ng-view></div>
-</div>
+    <div ng-app="AtlantianRapier">
+      <div ng-include="'app/components/nav/navTemplate.html'" ng-controller="NavController"></div>
+      <div ng-view></div>
+    </div>
   </body>
 </html>
