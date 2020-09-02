@@ -1,0 +1,55 @@
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+
+#about {
+	margin-bottom: 20px;
+}
+
+.about-content {
+	padding-left: -100px;
+}
+
+
+.section-title {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.content {
+	padding: 30px;
+}
+
+.sub-section-title{
+	padding-bottom: 30px;
+}
+
+.contact-form {
+	padding-top: 30px;
+}
+
+.logo-small {
+	color: skyblue;
+	font-size: 50px;
+}
+.logo {
+	color: gray;
+	font-size: 150px;
+	padding-left: 170px;
+}
+.social .fa-facebook:hover {
+	color: #4060A5;
+}
+
+.social .fa-twitter:hover {
+	color: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+	color: #e64522;
+}
+
+.social .fa-linkedin:hover {
+	color: #0094BC;
+}
