@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <!-- All Javascript references go here -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <script src="app/components/home/homeController.js"></script>
@@ -11,6 +12,7 @@
   <script src="app/app.route.js"></script>
   <script src="app/app.module.js"></script>
 
+  <!-- All CSS references go here -->
   <link rel="stylesheet" href="assets/css/RapierStyles.css">
 
   <head>
@@ -19,8 +21,14 @@
   </head>
   <body>
     <div ng-app="AtlantianRapier">
+
+      <!-- this puts the nav bar on the page, it is constant across all content, nav bar changes need to go in navTemplate.html -->
       <div ng-include="'app/components/nav/navTemplate.html'" ng-controller="NavController"></div>
+
+      <!-- this contains the main content for each page, everything other than the nav bar-->
+      <!-- templates should not have body or head tags, think of them as html that will be inserted in this file-->
       <div ng-view></div>
+
     </div>
   </body>
 </html>

@@ -1,5 +1,10 @@
 <ul>
+
+  <!-- this generates all the navigation links, controlled by $scope.linkList in navController.js-->
+  <!-- ng-repeat will take each item from $scope.linkList and create an <li><a href></a></li> element for it. link.url and link.name are defined in the controller-->
   <li ng-repeat="link in linkList">
       <a href = "#!{{link.url}}">{{link.name}}</a>
   </li>
+
+
 </ul>
